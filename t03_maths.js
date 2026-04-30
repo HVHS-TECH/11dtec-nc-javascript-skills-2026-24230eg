@@ -1,7 +1,7 @@
 /****************************
 Maths:
 ****************************/
-console.log("Running t01_introduction.js");
+console.log("Running t01_maths.js");
 
 // Variables:
 let userName = "Ethan Gould";

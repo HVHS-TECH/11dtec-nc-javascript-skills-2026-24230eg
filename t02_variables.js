@@ -1,7 +1,7 @@
 /****************************
 Variables:
 ****************************/
-console.log("Running t01_introduction.js");
+console.log("Running t01_variables.js");
 
 // Variables:
 let userName = "Ethan Gould";

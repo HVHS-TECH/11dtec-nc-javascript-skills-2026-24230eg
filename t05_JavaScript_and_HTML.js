@@ -1,7 +1,7 @@
 /****************************
-Maths:
+JavaScript and HTML:
 ****************************/
-console.log("Running t05_introduction.js");
+console.log("Running t05__and_HTML.js");
 
 // Variables:
 let userName = "Ethan Gould";
@@ -16,7 +16,7 @@ ageInTenYears = userAge + 10;
 /****************************
 Main code:
 ****************************/
-console.log("Hi "+ userName +".");
+OUTPUT.innerHTML = "<p>Hi "+ userName +".</p>";
 console.log("As of "+ currentYear +" you are "+ userAge +" years old.");
 console.log("You were born in "+ userBirthYear +".");
 console.log("You have "+ userMoney +" dollars.");
