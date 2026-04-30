@@ -18,14 +18,14 @@ Main code:
 ****************************/
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 OUTPUT.innerHTML = "<p>Hi "+ userName +".</p>";
-OUTPUT.innerHTML = "<p>As of "+ currentYear +" you are "+ userAge +" years old.");
-OUTPUT.innerHTML = "<p>You were born in "+ userBirthYear +".");
-OUTPUT.innerHTML = "<p>You have "+ userMoney +" dollars.");
-OUTPUT.innerHTML = "<p>In 10 years you will be "+ ageInTenYears +" years old.")
+OUTPUT.innerHTML += "<p>As of "+ currentYear +" you are "+ userAge +" years old.</p>";
+OUTPUT.innerHTML += "<p>You were born in "+ userBirthYear +".</p>";
+OUTPUT.innerHTML += "<p>You have "+ userMoney +" dollars.</p>";
+OUTPUT.innerHTML += "<p>In 10 years you will be "+ ageInTenYears +" years old.</p>";
 userMoney = userMoney / 2;
-OUTPUT.innerHTML = "<p>You spend half of your money, now you have "+ userMoney +" dollars.")
+OUTPUT.innerHTML += "<p>You spend half of your money, now you have "+ userMoney +" dollars.</p>";
 userMoney = userMoney + 3;
-OUTPUT.innerHTML = "<p>Then you get $3, now you have "+ userMoney +" dollars.")
+OUTPUT.innerHTML += "<p>Then you get $3, now you have "+ userMoney +" dollars.</p>";
 
 /****************************
 Functions
