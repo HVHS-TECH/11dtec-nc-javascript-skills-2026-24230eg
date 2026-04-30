@@ -21,5 +21,5 @@ if (perimeter < area){
     console.log("Yay, your area is larger, this is right for this example");
 }
 else{
-    console.log("Hmm, your perimeter is larger. It shouldn't be for this example);
+    console.log("Hmm, your perimeter is larger. It shouldn't be for this example");
 };
