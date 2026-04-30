@@ -16,6 +16,7 @@ ageInTenYears = userAge + 10;
 /****************************
 Main code:
 ****************************/
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 OUTPUT.innerHTML = "<p>Hi "+ userName +".</p>";
 console.log("As of "+ currentYear +" you are "+ userAge +" years old.");
 console.log("You were born in "+ userBirthYear +".");
