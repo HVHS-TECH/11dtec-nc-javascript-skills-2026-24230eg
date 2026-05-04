@@ -29,6 +29,7 @@ function displayProduct (_name, _price){
     OUTPUT.innerHTML += "<p>"+ _name +": $"+ _price +"</p>";
 };
 function start(){
+    userMoney = 
     OUTPUT.innerHTML = "<h2>Added by Javascript.</h2>";
     OUTPUT.innerHTML += "<p>Hi "+ userName +".</p>";
     OUTPUT.innerHTML += "<p>As of "+ currentYear +" you are "+ userAge +" years old.</p>";
