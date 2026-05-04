@@ -19,8 +19,9 @@
   <h1>T10-input from HTML</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
   <form onsubmit="return false;">
+    <label for="formName">Name:</label>
     <input type="text" id="nameFeild">
-    <input type="submit" onclick="">
+    <input type="submit" onclick="getFormInput()">
   </form>
   
   <button onclick="start()">Submit</button>
