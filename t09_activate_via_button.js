@@ -18,7 +18,6 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 Main code:
 ****************************/
 
-
 /****************************
 Functions
 ****************************/
@@ -29,7 +28,7 @@ function displayProduct (_name, _price){
     OUTPUT.innerHTML += "<p>"+ _name +": $"+ _price +"</p>";
 };
 function start(){
-    userMoney = 
+    userMoney = 13.30;
     OUTPUT.innerHTML = "<h2>Added by Javascript.</h2>";
     OUTPUT.innerHTML += "<p>Hi "+ userName +".</p>";
     OUTPUT.innerHTML += "<p>As of "+ currentYear +" you are "+ userAge +" years old.</p>";
@@ -44,4 +43,4 @@ function start(){
     displayProduct("Chocolate bar", 4);
     displayProduct("Chips", 3);
     displayProduct("Drink", 2.5);
-}
+};

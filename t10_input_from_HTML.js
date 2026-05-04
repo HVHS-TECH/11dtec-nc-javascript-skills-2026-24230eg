@@ -1,1 +1,46 @@
-/* Paste your code from the last task */
+/****************************
+input form HTML:
+****************************/
+console.log("Running t10_input_from_HTML.js");
+
+// Variables:
+let userName = "Ethan Gould";
+let currentYear = 2026;
+let userAge = 14;
+let userMoney = 13.30;
+let userBirthYear;
+let ageInTenYears;
+userBirthYear = currentYear - userAge;
+ageInTenYears = userAge + 10;
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+/****************************
+Main code:
+****************************/
+
+/****************************
+Functions
+****************************/
+function welcome(){
+    OUTPUT.innerHTML += "<p>Welcome to the shop.</p>";
+};
+function displayProduct (_name, _price){
+    OUTPUT.innerHTML += "<p>"+ _name +": $"+ _price +"</p>";
+};
+function start(){
+
+    OUTPUT.innerHTML = "<h2>Added by Javascript.</h2>";
+    OUTPUT.innerHTML += "<p>Hi "+ userName +".</p>";
+    OUTPUT.innerHTML += "<p>As of "+ currentYear +" you are "+ userAge +" years old.</p>";
+    OUTPUT.innerHTML += "<p>You were born in "+ userBirthYear +".</p>";
+    OUTPUT.innerHTML += "<p>You have "+ userMoney +" dollars.</p>";
+    OUTPUT.innerHTML += "<p>In 10 years you will be "+ ageInTenYears +" years old.</p>";
+    userMoney = userMoney / 2;
+    OUTPUT.innerHTML += "<p>You spend half of your money, now you have "+ userMoney +" dollars.</p>";
+    userMoney = userMoney + 3;
+    OUTPUT.innerHTML += "<p>Then you get $3, now you have "+ userMoney +" dollars.</p>";
+    welcome();
+    displayProduct("Chocolate bar", 4);
+    displayProduct("Chips", 3);
+    displayProduct("Drink", 2.5);
+};
