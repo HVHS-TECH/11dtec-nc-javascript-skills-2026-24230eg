@@ -13,7 +13,7 @@ let ageInTenYears;
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-const NAME_FIELD = document.getElementById("nameFeild");
+const NAME_FIELD = document.getElementById("nameField");
 
 /****************************
 Main code:
