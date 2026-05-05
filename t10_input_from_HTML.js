@@ -32,10 +32,11 @@ function getFormInput(){
     const NAME_FIELD = document.getElementById("nameFeild");
     let userName = NAME_FIELD.value;
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
+    start();
 }
 function start(){
-    userMoney = 13.30;
-    OUTPUT.innerHTML = "<h2>Added by Javascript.</h2>";
+    userMoney += 13.30;
+    OUTPUT.innerHTML += "<h2>Added by Javascript.</h2>";
     OUTPUT.innerHTML += "<p>Hi "+ userName +".</p>";
     OUTPUT.innerHTML += "<p>As of "+ currentYear +" you are "+ userAge +" years old.</p>";
     OUTPUT.innerHTML += "<p>You were born in "+ userBirthYear +".</p>";
