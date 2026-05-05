@@ -4,7 +4,7 @@ input form HTML:
 console.log("Running t10_input_from_HTML.js");
 
 // Variables:
-let userName = "Ethan Gould";
+let userName = "NAME_FIELD.value";
 let currentYear = 2026;
 let userAge = 14;
 let userMoney = 13.30;
@@ -13,6 +13,7 @@ let ageInTenYears;
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const NAME_FIELD = document.getElementById("nameFeild");
 
 /****************************
 Main code:
