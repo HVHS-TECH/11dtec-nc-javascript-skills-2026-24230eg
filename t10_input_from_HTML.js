@@ -32,7 +32,6 @@ function getFormInput(){
     const NAME_FIELD = document.getElementById("nameFeild");
     let userName = NAME_FIELD.value;
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
-    start();
 }
 function start(){
     userMoney += 13.30;
