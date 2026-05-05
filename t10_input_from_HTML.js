@@ -4,7 +4,7 @@ input form HTML:
 console.log("Running t10_input_from_HTML.js");
 
 // Variables:
-let userName = "NAME_FIELD.value";
+let userName = NAME_FIELD.value;
 let currentYear = 2026;
 let userAge = 14;
 let userMoney = 13.30;
@@ -30,6 +30,7 @@ function displayProduct (_name, _price){
 };
 function start(){
     userMoney = 13.30;
+    userName = NAME_FIELD.value;
     OUTPUT.innerHTML = "<h2>Added by Javascript.</h2>";
     OUTPUT.innerHTML += "<p>Hi "+ userName +".</p>";
     OUTPUT.innerHTML += "<p>As of "+ currentYear +" you are "+ userAge +" years old.</p>";
