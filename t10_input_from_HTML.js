@@ -33,7 +33,7 @@ function getFormInput(){
     let userName = NAME_FIELD.value;
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
 }
-function start(){
+/*function start(){
     userMoney += 13.30;
     OUTPUT.innerHTML += "<h2>Added by Javascript.</h2>";
     OUTPUT.innerHTML += "<p>Hi "+ userName +".</p>";
@@ -49,4 +49,4 @@ function start(){
     displayProduct("Chocolate bar", 4);
     displayProduct("Chips", 3);
     displayProduct("Drink", 2.5);
-};
+};*/
