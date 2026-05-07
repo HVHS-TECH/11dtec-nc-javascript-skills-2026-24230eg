@@ -35,8 +35,11 @@ function displayProduct (_name, _price){
 };
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameFeild");
-    let userName = NAME_FIELD.value;
+    userName = NAME_FIELD.value;
+    const AGE_FIELD = document.getElementById("ageFeild");
+    userAge = AGE_FIELD.value;
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
+    OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
 }
 /*function start(){
     userMoney += 13.30;
