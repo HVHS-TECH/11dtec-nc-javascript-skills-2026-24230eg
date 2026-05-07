@@ -36,7 +36,7 @@ function getFormInput(){
     userAge = Math.floor(Number(AGE_FIELD.value));
     userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
-    if not(userAge === NaN){
+    if !(userAge === NaN){
 
     }
     OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
