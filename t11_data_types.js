@@ -33,8 +33,8 @@ function displayProduct (_name, _price){
 };
 function getFormInput(){
     userName = NAME_FIELD.value;
-    userAge = AGE_FIELD.value;
-    userMoney = MONEY_FIELD.value;
+    userAge = (Number(AGE_FIELD.value));
+    userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
     OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
     OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
