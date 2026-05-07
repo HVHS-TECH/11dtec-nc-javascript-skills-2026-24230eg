@@ -4,6 +4,8 @@ data types:
 console.log("Running t11_data_types.js");
 
 // Variables:
+let num1 = "50";
+let num2 = 50;
 let userName = "Ethan Gould";
 let currentYear = 2026;
 let userAge = 14;
@@ -18,7 +20,10 @@ const NAME_FIELD = document.getElementById("nameFeild");
 /****************************
 Main code:
 ****************************/
-
+console.log( num1 + num1);
+console.log(num2 + num2);
+num1 = Number(num1);
+console.log( num1 + num1);
 /****************************
 Functions
 ****************************/
