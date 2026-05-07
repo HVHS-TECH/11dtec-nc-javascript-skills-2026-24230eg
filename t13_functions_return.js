@@ -46,3 +46,6 @@ function getFormInput(){
         OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
     };
 };
+function calculateChange(_money, _price){
+    if
+}
