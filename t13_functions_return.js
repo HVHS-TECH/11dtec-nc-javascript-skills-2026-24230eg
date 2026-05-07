@@ -10,6 +10,7 @@ let userAge;
 let userMoney;
 let userBirthYear;
 let ageInTenYears;
+let change;
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
