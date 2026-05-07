@@ -40,4 +40,9 @@ function getFormInput(){
         OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
     };
     OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
+    if (userMoney >= 4){
+        OUTPUT.innerHTML += "<p>A chocolate bar costs $4. You CAN afford a chocolate bar.</p>";
+    }else{
+        OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
+    }
 };
