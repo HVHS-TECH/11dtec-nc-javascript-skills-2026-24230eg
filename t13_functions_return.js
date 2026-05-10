@@ -33,17 +33,19 @@ function displayProduct (_name, _price){
 function getFormInput(){
     userName = NAME_FIELD.value;
     userAge = Math.floor(Number(AGE_FIELD.value));
-    userMoney = Number(MONEY_FIELD.value);
+    userMoney = (Math.round((userMoney)*100))/100;
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
     if (!isNaN(userAge)){
         OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
     };
-    OUTPUT.innerHTML += "<p>You have "+ (Math.round((userMoney)*100))/100 +"$.</p>";
-    if (userMoney >= 4){
-        OUTPUT.innerHTML += "<p>A chocolate bar costs $4. You CAN afford a chocolate bar.</p>";
-    }
-    else{
-        OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
+    if (!isNaN(userMoney)){
+        OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
+        if (userMoney >= 4){
+            OUTPUT.innerHTML += "<p>A chocolate bar costs $4. You CAN afford a chocolate bar.</p>";
+        }
+        else{
+            OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
+        };
     };
     calculateChange(userMoney, 4);
 };
