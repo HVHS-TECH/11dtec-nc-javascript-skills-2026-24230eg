@@ -47,7 +47,7 @@ function getFormInput(){
     };
 };
 function calculateChange(_money, _price){
-    if (_money < _price){
-        OUTPUT.innerHTML += "<p>Sorry you CAN'T afford a chocolate bar.</p>";
+    if (_money >= _price){
+        OUTPUT.innerHTML += "<p>You will get "+ (_money-_price) +" change.</p>";
     }
 }
