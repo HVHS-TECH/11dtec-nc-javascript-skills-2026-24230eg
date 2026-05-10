@@ -11,7 +11,7 @@ let userMoney;
 let userBirthYear;
 let ageInTenYears;
 let change;
-let chocolateMessages = [];
+let chocolateMessages = ["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"];
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
