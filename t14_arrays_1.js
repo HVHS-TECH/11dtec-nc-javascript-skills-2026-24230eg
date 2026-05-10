@@ -11,7 +11,7 @@ let userMoney;
 let userBirthYear;
 let ageInTenYears;
 let change;
-let userPrefrenceChocolate = [];
+let chocolateMessages = [];
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
@@ -35,6 +35,7 @@ function getFormInput(){
     userName = NAME_FIELD.value;
     userAge = Math.floor(Number(AGE_FIELD.value));
     userMoney = (Math.floor((MONEY_FIELD.value)*100))/100;
+    userPrefrenceChocolate =
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
     if (!isNaN(userAge)){
         OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
