@@ -33,7 +33,7 @@ function displayProduct (_name, _price){
 function getFormInput(){
     userName = NAME_FIELD.value;
     userAge = Math.floor(Number(AGE_FIELD.value));
-    userMoney = (Math.round((MONEY_FIELD.value)*100))/100;
+    userMoney = (Math.floor((MONEY_FIELD.value)*100))/100;
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
     if (!isNaN(userAge)){
         OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
@@ -51,6 +51,6 @@ function getFormInput(){
 };
 function calculateChange(_money, _price){
     if (_money >= _price){
-        OUTPUT.innerHTML += "<p>You will get "+ (Math.round((_money-_price)*100))/100 +" change.</p>";
+        OUTPUT.innerHTML += "<p>You will get "+ (Math.round((_money-_price)*100))/100 +"$ change.</p>";
     };
 };
