@@ -45,10 +45,10 @@ function getFormInput(){
     else{
         OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
     };
-    calculateChange(userMoney, 4)
+    calculateChange(userMoney, 4);
 };
 function calculateChange(_money, _price){
     if (_money >= _price){
         OUTPUT.innerHTML += "<p>You will get "+ Math.round(_money-_price) +" change.</p>";
-    }
-}
+    };
+};
