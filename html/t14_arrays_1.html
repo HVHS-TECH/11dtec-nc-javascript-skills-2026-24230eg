@@ -19,7 +19,18 @@
   <h1>T14-arrays part 1</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+  <form onsubmit="return false;">
+    <label for="formName">Name:</label>
+    <input type="text" id="nameFeild" name="formName">
+    <br>
+    <label for="formAge">Age:</label>
+    <input type="text" id="ageFeild" name="formAge">
+    <br>
+    <label for="formMoney">Pocket money:</label>
+    <input type="text" id="moneyFeild" name="formMoney">
+    <br>
+    <input type="submit" onclick="getFormInput()">
+  </form>
 
   <div id="spaceForJavaScriptOutput">
 
