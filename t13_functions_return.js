@@ -38,7 +38,7 @@ function getFormInput(){
     if (!isNaN(userAge)){
         OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
     };
-    OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
+    OUTPUT.innerHTML += "<p>You have "+ (Math.round((userMoney)*100))/100 +"$.</p>";
     if (userMoney >= 4){
         OUTPUT.innerHTML += "<p>A chocolate bar costs $4. You CAN afford a chocolate bar.</p>";
     }
