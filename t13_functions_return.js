@@ -33,7 +33,7 @@ function displayProduct (_name, _price){
 function getFormInput(){
     userName = NAME_FIELD.value;
     userAge = Math.floor(Number(AGE_FIELD.value));
-    userMoney = (Math.round((userMoney)*100))/100;
+    userMoney = (Math.round((MONEY_FIELD.value)*100))/100;
     OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
     if (!isNaN(userAge)){
         OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
