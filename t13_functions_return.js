@@ -49,6 +49,6 @@ function getFormInput(){
 };
 function calculateChange(_money, _price){
     if (_money >= _price){
-        OUTPUT.innerHTML += "<p>You will get "+ Math.round(_money-_price) +" change.</p>";
+        OUTPUT.innerHTML += "<p>You will get "+ (Math.round((_money-_price)*100))/100 +" change.</p>";
     };
 };
