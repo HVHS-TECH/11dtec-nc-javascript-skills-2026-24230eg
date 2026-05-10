@@ -11,6 +11,7 @@ let userMoney;
 let userBirthYear;
 let ageInTenYears;
 let change;
+let userPrefrenceChocolate = [];
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
