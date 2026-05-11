@@ -56,9 +56,12 @@ function getFormInput(){
         calculateChange(userMoney, 4);
     };
     OUTPUT.innerHTML += "<p>"+ chocolateMessages[userPrefrenceChocolate]+"<p>";
-    for (count = userMilkNum,; count > 0; count--){
-        OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall"
-    }
+    for (count = userMilkNum; count > 0; count-1){
+        OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall.</p>"
+        OUTPUT.innerHTML += "<p>"+ count +" bottels of milk.</p>"
+        OUTPUT.innerHTML += "<p>You take one down you pass it around.</p>"
+        OUTPUT.innerHTML += "<p>"+ count-1 +" bottels of milk on the wall.</p>"
+    };
 };
 function calculateChange(_money, _price){
     if (_money >= _price){
