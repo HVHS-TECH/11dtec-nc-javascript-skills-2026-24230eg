@@ -56,7 +56,9 @@ function getFormInput(){
         calculateChange(userMoney, 4);
     };
     OUTPUT.innerHTML += "<p>"+ chocolateMessages[userPrefrenceChocolate]+"<p>";
-    for (userMilkNum)
+    for (count = userMilkNum,; count > 0; count--){
+        OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall"
+    }
 };
 function calculateChange(_money, _price){
     if (_money >= _price){
