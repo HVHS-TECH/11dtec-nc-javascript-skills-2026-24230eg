@@ -1,7 +1,7 @@
 /****************************
-arrays 1:
+for loop:
 ****************************/
-console.log("Running t14_arrays_1.js");
+console.log("Running t15_for_loop.js");
 
 // Variables:
 let userName;
