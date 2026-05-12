@@ -75,6 +75,6 @@ function getShopingInput(){
 };
 function displayShoppingList(){
     for(let i = userShoppingList.length; i > 0; i = (i-1)){
-        OUTPUT.innerHTML += "<p>"+  +"</p>";
+        OUTPUT.innerHTML += "<p>"+ userShoppingList[i] +"</p>";
     }
 }
