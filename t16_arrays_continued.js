@@ -74,7 +74,7 @@ function getShopingInput(){
     userShoppingList.push(ITEM_SHOPPING_FIELD.value);
 };
 function displayShoppingList(){
-    for(let i = userShoppingList.length; i > 0; i = (i-1)){
+    for(let i = 0; i < userShoppingList.length; i++){
         OUTPUT.innerHTML += "<p>"+ userShoppingList[i] +"</p>";
-    }
-}
+    };
+};
