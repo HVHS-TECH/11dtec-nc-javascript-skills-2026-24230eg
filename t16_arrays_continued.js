@@ -14,6 +14,7 @@ let change;
 let userPrefrenceChocolate;
 let chocolateMessages = ["You loath chocolate.","Chocolate is meh.","Chocolate is pretty good.","Chocolate is the best thing EVER!!!!"];
 let userMilkNum;
+let userShoppingList;
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
@@ -22,6 +23,7 @@ const AGE_FIELD = document.getElementById("ageFeild");
 const MONEY_FIELD = document.getElementById("moneyFeild");
 const CHOCOLATE_SLIDER = document.getElementById("chocolateSlider");
 const MILK_RANGE = document.getElementById("milkRange");
+const ITEM_SHOPPING_FIELD = document.getElementById("itemShopingFeild");
 /****************************
 Main code:
 ****************************/
