@@ -70,3 +70,11 @@ function calculateChange(_money, _price){
         OUTPUT.innerHTML += "<p>You will get "+ (Math.round((_money-_price)*100))/100 +"$ change.</p>";
     };
 };
+function getShopingInput(){
+    userShoppingList.push(ITEM_SHOPPING_FIELD.value);
+};
+function displayShoppingList(){
+    for(let i = userShoppingList.length; i > 0; i = (i-1)){
+        OUTPUT.innerHTML += "<p>"+  +"</p>";
+    }
+}
