@@ -17,6 +17,7 @@ let userMilkNum;
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const FORM = document.getElementById("formForm");
 const NAME_FIELD = document.getElementById("nameFeild");
 const AGE_FIELD = document.getElementById("ageFeild");
 const MONEY_FIELD = document.getElementById("moneyFeild");
