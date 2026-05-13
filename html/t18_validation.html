@@ -19,7 +19,24 @@
   <h1>T18-validation</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+  <form onsubmit="return false;">
+    <label for="formName">Name:</label>
+    <input type="text" id="nameFeild" name="formName">
+    <br>
+    <label for="formAge">Age:</label>
+    <input type="text" id="ageFeild" name="formAge">
+    <br>
+    <label for="formMoney">Pocket money:</label>
+    <input type="text" id="moneyFeild" name="formMoney">
+    <br>
+    <label for="formChocolate">On a scale of 1-4 how much do you like chocolate:</label>
+    <input type="number" id="chocolateSlider" name="formChocolate" min="1" max="4">
+    <br>
+    <label for="formMilk">How many bottels of milk on the wall?</label>
+    <input type="number" id="milkRange" name="formMilk" min="1">
+    <br>
+    <input type="submit" onclick="getFormInput()">
+  </form>
 
   <div id="spaceForJavaScriptOutput">
 
