@@ -14,7 +14,7 @@ let change;
 let userPrefrenceChocolate;
 let chocolateMessages = ["You loath chocolate.","Chocolate is meh.","Chocolate is pretty good.","Chocolate is the best thing EVER!!!!"];
 let userMilkNum;
-let userShoppingList;
+let userShoppingList = [];
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
