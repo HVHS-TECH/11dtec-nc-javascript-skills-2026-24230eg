@@ -21,7 +21,7 @@ const FORM = document.getElementById("formForm");
 const NAME_FIELD = document.getElementById("nameFeild");
 const AGE_FIELD = document.getElementById("ageFeild");
 const MONEY_FIELD = document.getElementById("moneyFeild");
-const CHOCOLATE_SLIDER = document.getElementById("chocolateSlider");
+const CHOCOLATE_RANGE = document.getElementById("chocolateRange");
 const MILK_RANGE = document.getElementById("milkRange");
 /****************************
 Main code:
@@ -37,33 +37,40 @@ function displayProduct (_name, _price){
     OUTPUT.innerHTML += "<p>"+ _name +": $"+ _price +"</p>";
 };
 function getFormInput(){
-    if(FORM.checkValidiy() === )
     userName = NAME_FIELD.value;
     userAge = Math.floor(Number(AGE_FIELD.value));
     userMoney = (Math.floor((MONEY_FIELD.value)*100))/100;
-    userPrefrenceChocolate = (CHOCOLATE_SLIDER.value-1);
+    userPrefrenceChocolate = (CHOCOLATE_RANGE.value-1);
     userMilkNum = MILK_RANGE.value;
-    OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
-    if (!isNaN(userAge)){
-        OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
-    };
-    if (!isNaN(userMoney)){
-        OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
-        if (userMoney >= 4){
-            OUTPUT.innerHTML += "<p>A chocolate bar costs $4. You CAN afford a chocolate bar.</p>";
+    if (FORM.checkValidiy() === false){
+
+    } else{
+
+        if (isNan(userName)){
+            OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
         }
-        else{
-            OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
+        if (!isNaN(userAge)){
+            OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
         };
-        calculateChange(userMoney, 4);
-    };
-    OUTPUT.innerHTML += "<p>"+ chocolateMessages[userPrefrenceChocolate]+"<p>";
-    for (let count = userMilkNum; count > 0; count = (count-1)){
-        OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall.</p>";
-        OUTPUT.innerHTML += "<p>"+ count +" bottels of milk.</p>";
-        OUTPUT.innerHTML += "<p>You take one down you pass it around.</p>";
-        OUTPUT.innerHTML += "<p>"+ (count - 1) +" bottels of milk on the wall.</p>";
-    };
+        if (!isNaN(userMoney)){
+            OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
+            if (userMoney >= 4){
+                OUTPUT.innerHTML += "<p>A chocolate bar costs $4. You CAN afford a chocolate bar.</p>";
+            }
+            else{
+                OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
+            };
+            calculateChange(userMoney, 4);
+        };
+        OUTPUT.innerHTML += "<p>"+ chocolateMessages[userPrefrenceChocolate]+"<p>";
+        for (let count = userMilkNum; count > 0; count = (count-1)){
+            OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall.</p>";
+            OUTPUT.innerHTML += "<p>"+ count +" bottels of milk.</p>";
+            OUTPUT.innerHTML += "<p>You take one down you pass it around.</p>";
+            OUTPUT.innerHTML += "<p>"+ (count - 1) +" bottels of milk on the wall.</p>";
+        };
+    }
+    
 };
 function calculateChange(_money, _price){
     if (_money >= _price){
