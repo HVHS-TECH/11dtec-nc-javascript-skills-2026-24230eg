@@ -62,6 +62,7 @@ function getFormInput(){
             };
             calculateChange(userMoney, 4);
         };
+        if 
         OUTPUT.innerHTML += "<p>"+ chocolateMessages[userPrefrenceChocolate]+"<p>";
         for (let count = userMilkNum; count > 0; count = (count-1)){
             OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall.</p>";
