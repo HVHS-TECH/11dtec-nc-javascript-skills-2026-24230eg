@@ -37,6 +37,7 @@ function displayProduct (_name, _price){
     OUTPUT.innerHTML += "<p>"+ _name +": $"+ _price +"</p>";
 };
 function getFormInput(){
+    if(FORM.checkValidiy() === )
     userName = NAME_FIELD.value;
     userAge = Math.floor(Number(AGE_FIELD.value));
     userMoney = (Math.floor((MONEY_FIELD.value)*100))/100;
