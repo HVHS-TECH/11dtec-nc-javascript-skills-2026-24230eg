@@ -1,7 +1,7 @@
 /****************************
-arrays contiued:
+validation:
 ****************************/
-console.log("Running t16_arrays_continued.js");
+console.log("Running t18_validation.js");
 
 // Variables:
 let userName;
@@ -14,7 +14,6 @@ let change;
 let userPrefrenceChocolate;
 let chocolateMessages = ["You loath chocolate.","Chocolate is meh.","Chocolate is pretty good.","Chocolate is the best thing EVER!!!!"];
 let userMilkNum;
-let userShoppingList = [];
 userBirthYear = currentYear - userAge;
 ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
@@ -23,7 +22,6 @@ const AGE_FIELD = document.getElementById("ageFeild");
 const MONEY_FIELD = document.getElementById("moneyFeild");
 const CHOCOLATE_SLIDER = document.getElementById("chocolateSlider");
 const MILK_RANGE = document.getElementById("milkRange");
-const ITEM_SHOPPING_FIELD = document.getElementById("itemShopingFeild");
 /****************************
 Main code:
 ****************************/
@@ -68,14 +66,5 @@ function getFormInput(){
 function calculateChange(_money, _price){
     if (_money >= _price){
         OUTPUT.innerHTML += "<p>You will get "+ (Math.round((_money-_price)*100))/100 +"$ change.</p>";
-    };
-};
-function getShopingInput(){
-    userShoppingList.push(ITEM_SHOPPING_FIELD.value);
-};
-function displayShoppingList(){
-    OUTPUT.innerHTML ="";
-    for(let i = 0; i < userShoppingList.length; i++){
-        OUTPUT.innerHTML += "<p>"+ userShoppingList[i] +"</p>";
     };
 };
