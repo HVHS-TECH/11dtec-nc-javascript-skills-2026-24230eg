@@ -54,7 +54,7 @@ function getFormInput(){
         if (!isNaN(userAge)){
             OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
         }else{
-            OUTPUT.innerHTML = "<p>That is not a valid age.</p>";
+            OUTPUT.innerHTML += "<p>That is not a valid age.</p>";
         };
         if (!isNaN(userMoney)|| userMoney>=0){
             OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
