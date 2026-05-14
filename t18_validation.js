@@ -65,7 +65,7 @@ function getFormInput(){
                 OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
             };
             calculateChange(userMoney, 4);
-        }if (userMoney<0) {
+        }else if (userMoney<0) {
             OUTPUT.innerHTML += "<p>How are you in debt in pocket money.</p>";
         }else {
             OUTPUT.innerHTML += "<p>That is not a valid amount of money.</p>";
