@@ -5,17 +5,13 @@ console.log("Running t20_constants.js");
 
 // Variables:
 let userName;
-let currentYear = 2026;
+const CURRENTYEAR = 2026;
 let userAge;
 let userMoney;
 let userBirthYear;
-let ageInTenYears;
-let change;
 let userPrefrenceChocolate;
-let chocolateMessages = ["You loath chocolate.","Chocolate is meh.","Chocolate is pretty good.","Chocolate is the best thing EVER!!!!"];
+const CHOCOLATEMESSAGES = ["You loath chocolate.","Chocolate is meh.","Chocolate is pretty good.","Chocolate is the best thing EVER!!!!"];
 let userMilkNum;
-userBirthYear = currentYear - userAge;
-ageInTenYears = userAge + 10;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const FORM = document.getElementById("formForm");
 const NAME_FIELD = document.getElementById("nameFeild");
@@ -30,12 +26,6 @@ Main code:
 /****************************
 Functions
 ****************************/
-function welcome(){
-    OUTPUT.innerHTML += "<p>Welcome to the shop.</p>";
-};
-function displayProduct (_name, _price){
-    OUTPUT.innerHTML += "<p>"+ _name +": $"+ _price +"</p>";
-};
 function getFormInput(){
     userName = NAME_FIELD.value;
     userAge = Math.floor(Number(AGE_FIELD.value));
@@ -72,7 +62,7 @@ function getFormInput(){
             };
             calculateChange(userMoney, 4);
         };
-        OUTPUT.innerHTML += "<p>"+ chocolateMessages[userPrefrenceChocolate]+"<p>";
+        OUTPUT.innerHTML += "<p>"+ CHOCOLATEMESSAGES[userPrefrenceChocolate]+"<p>";
         for (let count = userMilkNum; count > 0; count = (count-1)){
             OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall.</p>";
             OUTPUT.innerHTML += "<p>"+ count +" bottels of milk.</p>";
