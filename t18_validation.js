@@ -46,7 +46,7 @@ function getFormInput(){
     if (FORM.checkValidity() === false){
     } else{
         console.log("2");
-        if (isNan(userName)){
+        if (isNaN(userName)){
             OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
         }
         if (!isNaN(userAge)){
