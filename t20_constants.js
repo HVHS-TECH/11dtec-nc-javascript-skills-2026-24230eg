@@ -5,12 +5,12 @@ console.log("Running t20_constants.js");
 
 // Variables:
 let userName;
-const CURRENTYEAR = 2026;
+const CURREN_TYEAR = 2026;
 let userAge;
 let userMoney;
 let userBirthYear;
 let userPrefrenceChocolate;
-const CHOCOLATEMESSAGES = ["You loath chocolate.","Chocolate is meh.","Chocolate is pretty good.","Chocolate is the best thing EVER!!!!"];
+const CHOCOLATE_MESSAGES = ["You loath chocolate.","Chocolate is meh.","Chocolate is pretty good.","Chocolate is the best thing EVER!!!!"];
 let userMilkNum;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const FORM = document.getElementById("formForm");
@@ -62,7 +62,7 @@ function getFormInput(){
             };
             calculateChange(userMoney, 4);
         };
-        OUTPUT.innerHTML += "<p>"+ CHOCOLATEMESSAGES[userPrefrenceChocolate]+"<p>";
+        OUTPUT.innerHTML += "<p>"+ CHOCOLATE_MESSAGES[userPrefrenceChocolate]+"<p>";
         for (let count = userMilkNum; count > 0; count = (count-1)){
             OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall.</p>";
             OUTPUT.innerHTML += "<p>"+ count +" bottels of milk.</p>";
