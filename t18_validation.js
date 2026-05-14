@@ -54,9 +54,9 @@ function getFormInput(){
         if (!isNaN(userAge)){
             OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
         }else{
-            OUTPUT.innerHTML = "<p>That is no a valid age.</p>";
+            OUTPUT.innerHTML = "<p>That is not a valid age.</p>";
         };
-        if (!isNaN(userMoney)){
+        if (!isNaN(userMoney)|| userMoney<0){
             OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
             if (userMoney >= 4){
                 OUTPUT.innerHTML += "<p>A chocolate bar costs $4. You CAN afford a chocolate bar.</p>";
@@ -65,9 +65,11 @@ function getFormInput(){
                 OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
             };
             calculateChange(userMoney, 4);
-        }else{
-            OUTPUT.innerHTML = "<p>Your name can't be a number.</p>";
-        }
+        }if (userMoney<0) {
+            OUTPUT.innerHTML += "<p>How are you in debt in pocket money.</p>";
+        }else {
+            OUTPUT.innerHTML += "<p>That is not a valid amount of money.</p>";
+        };
         OUTPUT.innerHTML += "<p>"+ chocolateMessages[userPrefrenceChocolate]+"<p>";
         for (let count = userMilkNum; count > 0; count = (count-1)){
             OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall.</p>";
