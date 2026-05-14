@@ -47,9 +47,9 @@ function getFormInput(){
     } else{
         console.log("2");
         if (isNaN(userName)){
-            OUTPUT.innerHTML = "<p>Your name can't be a number.</p>";
-        }else{
             OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
+        }else{
+            OUTPUT.innerHTML = "<p>Your name can't be a number.</p>";
         };
         if (!isNaN(userAge)){
             OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
