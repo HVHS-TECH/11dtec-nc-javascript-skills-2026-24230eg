@@ -48,9 +48,13 @@ function getFormInput(){
         console.log("2");
         if (isNaN(userName)){
             OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
-        }
+        }else{
+            OUTPUT.innerHTML = "<p>Your name can't be a number.</p>";
+        };
         if (!isNaN(userAge)){
             OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
+        }else{
+            OUTPUT.innerHTML = "<p>That is no a valid age.</p>";
         };
         if (!isNaN(userMoney)){
             OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
@@ -61,7 +65,9 @@ function getFormInput(){
                 OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
             };
             calculateChange(userMoney, 4);
-        };
+        }else{
+            OUTPUT.innerHTML = "<p>Your name can't be a number.</p>";
+        }
         OUTPUT.innerHTML += "<p>"+ chocolateMessages[userPrefrenceChocolate]+"<p>";
         for (let count = userMilkNum; count > 0; count = (count-1)){
             OUTPUT.innerHTML += "<p>"+ count +" bottels of milk on the wall.</p>";
