@@ -48,9 +48,11 @@ function getFormInput(){
         console.log("2");
         if (isNaN(userName) && userName.length >2){
             OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
-        }else if(){
+        }else if(userName.length < 3){
+            OUTPUT.innerHTML = "<p>Your name is too short.</p>";
+        }else{
             OUTPUT.innerHTML = "<p>Your name can't be a number.</p>";
-        };
+        }
         if (!isNaN(userAge)){
             OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
         }else{
