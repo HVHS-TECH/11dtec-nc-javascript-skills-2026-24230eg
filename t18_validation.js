@@ -43,9 +43,7 @@ function getFormInput(){
     userPrefrenceChocolate = (CHOCOLATE_RANGE.value-1);
     userMilkNum = MILK_RANGE.value;
     if (FORM.checkValidiy() === false){
-
     } else{
-
         if (isNan(userName)){
             OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
         }
