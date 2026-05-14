@@ -1,7 +1,7 @@
 /****************************
-string handling:
+constants:
 ****************************/
-console.log("Running t19_string_handling.js");
+console.log("Running t20_constants.js");
 
 // Variables:
 let userName;
