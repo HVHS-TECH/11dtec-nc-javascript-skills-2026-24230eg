@@ -46,7 +46,7 @@ function getFormInput(){
     if (FORM.checkValidity() === false){
     } else{
         console.log("2");
-        if (isNaN(userName)){
+        if (!isNaN(userName)){
             OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
         }else{
             OUTPUT.innerHTML = "<p>Your name can't be a number.</p>";
@@ -56,7 +56,7 @@ function getFormInput(){
         }else{
             OUTPUT.innerHTML = "<p>That is not a valid age.</p>";
         };
-        if (!isNaN(userMoney)|| userMoney<0){
+        if (!isNaN(userMoney)|| userMoney>=0){
             OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
             if (userMoney >= 4){
                 OUTPUT.innerHTML += "<p>A chocolate bar costs $4. You CAN afford a chocolate bar.</p>";
