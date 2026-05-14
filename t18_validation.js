@@ -46,17 +46,21 @@ function getFormInput(){
     if (FORM.checkValidity() === false){
     } else{
         console.log("2");
-        if (!isNaN(userName)){
-            OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
-        }else{
+        if (isNaN(userName)){
             OUTPUT.innerHTML = "<p>Your name can't be a number.</p>";
+        }else{
+            OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
         };
         if (!isNaN(userAge)){
             OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
         }else{
             OUTPUT.innerHTML += "<p>That is not a valid age.</p>";
         };
-        if (!isNaN(userMoney)||!(userMoney<0)){
+        if (isNaN(userMoney)){
+            OUTPUT.innerHTML += "<p>That is not a valid amount of money.</p>";
+        }else if (userMoney<0) {
+            OUTPUT.innerHTML += "<p>How are you in debt in pocket money.</p>";
+        }else {
             OUTPUT.innerHTML += "<p>You have "+ userMoney +"$.</p>";
             if (userMoney >= 4){
                 OUTPUT.innerHTML += "<p>A chocolate bar costs $4. You CAN afford a chocolate bar.</p>";
@@ -65,10 +69,6 @@ function getFormInput(){
                 OUTPUT.innerHTML += "<p>A chocolate bar costs $4. Sorry you CAN'T afford a chocolate bar.</p>";
             };
             calculateChange(userMoney, 4);
-        }else if (userMoney<0) {
-            OUTPUT.innerHTML += "<p>How are you in debt in pocket money.</p>";
-        }else {
-            OUTPUT.innerHTML += "<p>That is not a valid amount of money.</p>";
         };
         OUTPUT.innerHTML += "<p>"+ chocolateMessages[userPrefrenceChocolate]+"<p>";
         for (let count = userMilkNum; count > 0; count = (count-1)){
