@@ -80,6 +80,7 @@ function calculateChange(_money, _price){
 };
 function displayAllUsers(){
     let currentUser;
+    console.log("a1");
     for(let i = 0; i < users.length; i++){
         currentUser = users[i];
         if (isNaN(userName) && userName.length >2){
