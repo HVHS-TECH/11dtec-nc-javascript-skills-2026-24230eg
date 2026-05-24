@@ -81,6 +81,7 @@ function calculateChange(_money, _price){
 function displayAllUsers(){
     let currentUser;
     console.log("a1");
+    OUTPUT.innerHTML = "";
     for(let i = 0; i < users.length; i++){
         currentUser = users[i];
         console.log("a2");
