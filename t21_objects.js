@@ -4,6 +4,7 @@ constants:
 console.log("Running t20_constants.js");
 
 // Variables:
+let users = [];
 let userName;
 const CURREN_TYEAR = 2026;
 let userAge;
