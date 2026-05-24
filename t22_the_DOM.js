@@ -99,4 +99,9 @@ function displayAllUsers(){
 };
 function clear(){
     
-}
+    document.getElementById("nameFeild").value = " ";
+    document.getElementById("ageFeild").value = " ";
+    document.getElementById("moneyFeild").value = " ";
+    document.getElementById("chocolateRange").value = " ";
+    document.getElementById("milkRange").value = " ";
+};
