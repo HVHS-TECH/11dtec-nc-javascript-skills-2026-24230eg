@@ -97,7 +97,7 @@ function displayAllUsers(){
         OUTPUT.innerHTML += "<p>For them "+ CHOCOLATE_MESSAGES[currentUser.chocolate]+"<p>";
     };
 };
-function clear(){
+function clearForm(){
     console.log("b2");
     document.getElementById("nameFeild").value = " ";
     document.getElementById("ageFeild").value = " ";
