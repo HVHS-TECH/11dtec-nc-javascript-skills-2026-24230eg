@@ -98,7 +98,7 @@ function displayAllUsers(){
     };
 };
 function clear(){
-    
+    console.log("b2");
     document.getElementById("nameFeild").value = " ";
     document.getElementById("ageFeild").value = " ";
     document.getElementById("moneyFeild").value = " ";
