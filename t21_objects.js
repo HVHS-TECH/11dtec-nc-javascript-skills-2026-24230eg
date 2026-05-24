@@ -79,8 +79,13 @@ function calculateChange(_money, _price){
     };
 };
 function displayAllUsers(){
-    for(let i = )
-    if (isNaN(userName) && userName.length >2){
-        OUTPUT.innerHTML += "<p>Your name is "+ name +".</p>";
+    for(let i = users.length; i > 0; i = (i-1)){
+        if (isNaN(userName) && userName.length >2){
+            OUTPUT.innerHTML += "<p>Your name is "+ name +".</p>";
+        };
+        if (!isNaN(userAge)){
+            OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
+        };
+        OUTPUT.innerHTML += "<p>"+ CHOCOLATE_MESSAGES[userPrefrenceChocolate]+"<p>";
     };
-}
+};
