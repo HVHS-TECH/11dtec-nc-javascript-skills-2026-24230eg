@@ -89,8 +89,11 @@ function displayAllUsers(){
             OUTPUT.innerHTML += "<p>User "+ (i+1)+"'s name is "+ currentUser.name +".</p>";
         };
         if (!isNaN(userAge)){
-            OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
+            OUTPUT.innerHTML += "<p>They are "+ currentUser.age +" years old.</p>";
         };
-        OUTPUT.innerHTML += "<p>"+ CHOCOLATE_MESSAGES[userPrefrenceChocolate]+"<p>";
+        if (!isNaN(userMoney) && (userMoney>=0)){
+            OUTPUT.innerHTML += "<p>They have "+ currentUser.money +"$.</p>";
+        };
+        OUTPUT.innerHTML += "<p>For them "+ CHOCOLATE_MESSAGES[currentUser.chocolate]+"<p>";
     };
 };
