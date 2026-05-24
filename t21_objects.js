@@ -33,10 +33,10 @@ function getFormInput(){
     userMoney = (Math.floor((MONEY_FIELD.value)*100))/100;
     userPrefrenceChocolate = (CHOCOLATE_RANGE.value-1);
     userMilkNum = MILK_RANGE.value;
-    users.push( );
     console.log("1");
     if (FORM.checkValidity() === false){
     } else{
+        users.push({name:userName, age:userAge, money:userMoney, chocolate:userPrefrenceChocolate});
         console.log("2");
         if (isNaN(userName) && userName.length >2){
             OUTPUT.innerHTML = "<p>Your name is "+ userName +".</p>";
@@ -78,3 +78,9 @@ function calculateChange(_money, _price){
         OUTPUT.innerHTML += "<p>You will get "+ (Math.round((_money-_price)*100))/100 +"$ change.</p>";
     };
 };
+function displayAllUsers(){
+    for(let i = )
+    if (isNaN(userName) && userName.length >2){
+        OUTPUT.innerHTML += "<p>Your name is "+ name +".</p>";
+    };
+}
