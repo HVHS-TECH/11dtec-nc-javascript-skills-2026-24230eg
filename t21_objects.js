@@ -83,6 +83,7 @@ function displayAllUsers(){
     console.log("a1");
     for(let i = 0; i < users.length; i++){
         currentUser = users[i];
+        console.log("a2");
         if (isNaN(userName) && userName.length >2){
             OUTPUT.innerHTML += "<p>User "+ (i+1)+"'s name is "+ currentUser.name +".</p>";
         };
