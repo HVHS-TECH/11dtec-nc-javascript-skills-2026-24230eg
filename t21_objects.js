@@ -79,9 +79,9 @@ function calculateChange(_money, _price){
     };
 };
 function displayAllUsers(){
-    for(let i = users.length; i > 0; i = (i-1)){
+    for(let i = 0; i < users.length; i++){
         if (isNaN(userName) && userName.length >2){
-            OUTPUT.innerHTML += "<p>Your name is "+ name +".</p>";
+            OUTPUT.innerHTML += "<p>User "+ (i+1)+"'s name is "+ username +".</p>";
         };
         if (!isNaN(userAge)){
             OUTPUT.innerHTML += "<p>You are "+ userAge +" years old.</p>";
