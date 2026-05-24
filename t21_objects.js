@@ -33,7 +33,7 @@ function getFormInput(){
     userMoney = (Math.floor((MONEY_FIELD.value)*100))/100;
     userPrefrenceChocolate = (CHOCOLATE_RANGE.value-1);
     userMilkNum = MILK_RANGE.value;
-    
+    users.push( );
     console.log("1");
     if (FORM.checkValidity() === false){
     } else{
