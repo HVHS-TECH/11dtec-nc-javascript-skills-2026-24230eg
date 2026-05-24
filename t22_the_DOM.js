@@ -97,3 +97,6 @@ function displayAllUsers(){
         OUTPUT.innerHTML += "<p>For them "+ CHOCOLATE_MESSAGES[currentUser.chocolate]+"<p>";
     };
 };
+function clear(){
+    
+}
