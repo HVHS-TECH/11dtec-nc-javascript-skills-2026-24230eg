@@ -87,11 +87,13 @@ function displayAllUsers(){
         console.log("a2");
         if (isNaN(currentUser.name) && currentUser.name.length >2){
             OUTPUT.innerHTML += "<p>User "+ (i+1)+"'s name is "+ currentUser.name +".</p>";
+        }else{
+            OUTPUT.innerHTML += "<p>User "+ (i+1)+":</p>";
         };
         if (!isNaN(currentUser.age)){
             OUTPUT.innerHTML += "<p>They are "+ currentUser.age +" years old.</p>";
         };
-        if (!isNaN(currentUser.age) && (currentUser.age>=0)){
+        if (!isNaN(currentUser.money) && (currentUser.money>=0)){
             OUTPUT.innerHTML += "<p>They have "+ currentUser.money +"$.</p>";
         };
         OUTPUT.innerHTML += "<p>For them "+ CHOCOLATE_MESSAGES[currentUser.chocolate]+"<p>";
